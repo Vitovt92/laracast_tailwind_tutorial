@@ -12,13 +12,13 @@
 </head>
 <body style="font-family: Open Sans, sans-serif;">
     <section class="px-6 py-8">
-        <nav class="flex justify-between items-center">
+        <nav class="md:flex md:justify-between md:items-center">
             <div>
                 <a href="/">
                     <img src="./images/logo.svg" alt="Laracast logo" width="165" height="16">
                 </a>
             </div>
-            <div>
+            <div class="mt-8 lg:mt-0">
                 <a href="/" class="text-xs font-bold uppercase">Home Page</a>
 
                 <a href="#" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold uppercase text-white px-5 py-3">Subscribe for Updates</a>
@@ -37,9 +37,9 @@
                         Another year. Another update. We're refreshing the popular Laravel series with new content. I'm going to keep you guys up to speed with what's going on! 
                     </p>
                 </div>
-                <div class="tw-flex tw-justify-center space-x-8 mt-8">
-                    <span class="relative bg-gray-100 inline-block rounded-xl inline-flex items-center">
-                        <select class="appearance-none bg-transparent py-2 pl-2 pr-9 text-sm font-semibold">
+                <div class="tw-flex tw-justify-center space-y-4 lg:space-y-0 lg:space-x-8 mt-8">
+                    <span class="relative bg-gray-100  rounded-xl flex lg:inline-flex items-center">
+                        <select class="flex-1 appearance-none bg-transparent py-2 pl-2 pr-9 text-sm font-semibold">
                             <option value="personal">Personal</option>
                             <option value="business">Business</option>
                             <option value="category" selected>Category</option>
@@ -48,8 +48,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </span>
-                    <span class="relative bg-gray-100 inline-block rounded-xl inline-flex items-center">
-                        <select class="appearance-none bg-transparent py-2 pl-2 pr-9 text-sm font-semibold">
+                    <span class="relative bg-gray-100  rounded-xl flex lg:inline-flex items-center">
+                        <select class="flex-1 appearance-none bg-transparent py-2 pl-2 pr-9 text-sm font-semibold">
                             <option value="personal">Personal</option>
                             <option value="business">Business</option>
                             <option value="category" selected>Other Filters</option>
@@ -58,7 +58,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </span>
-                    <span class="px-3 py-2 relative bg-gray-100 inline-block rounded-xl inline-flex items-center">
+                    <span class="px-3 py-2 relative bg-gray-100  rounded-xl flex lg:inline-flex items-center">
                         <form action="#" method="get">
                             <input type="text" class="bg-transparent placeholder-black font-semibold" name="search" placeholder="Find something">
                         </form>
@@ -68,14 +68,14 @@
                 </div>
         </header>
 
-        <main class="max-w-6xl mx-auto mt-20 space-y-6">
+        <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6">
             <article class="transition-colors duration-300 rounded-xl border border-black border-opacity-0 hover:bg-gray-100 hover:border-opacity-5">
-                <div class="py-6 px-5 flex">
-                    <div class="flex-1 mr-8">
+                <div class="py-6 px-5 lg:flex">
+                    <div class="flex-1 lg:mr-8">
                         <img src="./images/illustration-1.png" alt="Blog post illustration" class="rounded-xl">
                     </div>
                     <div class="flex-1 flex justify-between flex-col">
-                        <header>
+                        <header class="mt-8">
                             <div class="space-x-2">
                                 <a href="#" class="px-3 py-1 border border-blue-500 rounded-full text-blue-500 text-2xs uppercase">Techniques</a>
                                 <a href="#" class="px-3 py-1 border border-red-500 rounded-full text-red-500 text-2xs uppercase">Updates</a>
@@ -99,7 +99,7 @@
                                     Mascat at Laracast
                                 </div>
                             </div>
-                            <div>
+                            <div class="hidden lg:block">
                                 <a href="#" class="text-xs font-semibold bg-gray-400 rounded-full py-2 px-5">Read More</a>
                             </div>
                         </footer>
@@ -107,7 +107,7 @@
                     </div>
                 </div>
             </article>
-            <div class="grid grid-cols-2">
+            <div class="lg:grid lg:grid-cols-2">
                 <article class="transition-colors duration-300 rounded-xl border border-black border-opacity-0 hover:bg-gray-100 hover:border-opacity-5">
                     <div class="py-6 px-5">
                         <div>
@@ -138,7 +138,7 @@
                                         Mascat at Laracast
                                     </div>
                                 </div>
-                                <div>
+                                <div  class="hidden lg:block">
                                     <a href="#" class="text-xs font-semibold bg-gray-400 rounded-full py-2 px-5">Read More</a>
                                 </div>
                             </footer>
@@ -176,7 +176,7 @@
                                         Mascat at Laracast
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden lg:block">
                                     <a href="#" class="text-xs font-semibold bg-gray-400 rounded-full py-2 px-5">Read More</a>
                                 </div>
                             </footer>
@@ -185,7 +185,7 @@
                     </div>
                 </article>
             </div>
-            <div class="grid grid-cols-3">
+            <div class="lg:grid lg:grid-cols-3">
                 <article class="transition-colors duration-300 rounded-xl border border-black border-opacity-0 hover:bg-gray-100 hover:border-opacity-5">
                     <div class="py-6 px-5">
                         <div>
@@ -216,7 +216,7 @@
                                         Mascat at Laracast
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden lg:block">
                                     <a href="#" class="text-xs font-semibold bg-gray-400 rounded-full py-2 px-5">Read More</a>
                                 </div>
                             </footer>
@@ -254,7 +254,7 @@
                                         Mascat at Laracast
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden lg:block">
                                     <a href="#" class="text-xs font-semibold bg-gray-400 rounded-full py-2 px-5">Read More</a>
                                 </div>
                             </footer>
@@ -292,7 +292,7 @@
                                         Mascat at Laracast
                                     </div>
                                 </div>
-                                <div>
+                                <div class="hidden lg:block">
                                     <a href="#" class="text-xs font-semibold bg-gray-400 rounded-full py-2 px-5">Read More</a>
                                 </div>
                             </footer>
@@ -309,15 +309,15 @@
             <p class="text-sm">Promise to keep the inbox clean. No bugs.</p>
 
             <div class="mt-10">
-                <div class="relative inline-block mx-auto bg-gray-200 rounded-full">
-                    <form method="POST" action="#" class="flex text-sm">
-                        <div class="py-3 px-5 inline-flex items-center">
-                            <label for="email">
+                <div class="relative  mx-auto lg:bg-gray-200 rounded-full">
+                    <form method="POST" action="#" class="lg:flex text-sm">
+                        <div class="lg:py-3 lg:px-5 flex items-center">
+                            <label for="email" class="hidden lg:tw-inline">
                                 <img src="./images/mailbox-icon.svg" alt="mailbox letter">
                             </label>
-                            <input id="email" type="text" placeholder="Your email address" class="bg-transparent pl-4 focus-within\:outline-none">
+                            <input id="email" type="text" placeholder="Your email address" class="lg:bg-transparent pl-4 focus-within\:outline-none">
                         </div>
-                        <button class="bg-blue-500 ml-3 rounded-full text-xs font-semibold uppercase text-white px-8 py-3 hover:bg-blue-600">Subscribe</button>
+                        <button class="bg-blue-500 lg:ml-3 mt-4 lg:mt-0 rounded-full text-xs font-semibold uppercase text-white px-8 py-3 hover:bg-blue-600">Subscribe</button>
                     </form>
                 </div>
             </div>
