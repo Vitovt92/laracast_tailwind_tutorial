@@ -5,9 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Laravel From Scratch Blog</title>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body style="font-family: Open Sans, sans-serif;">
+    <section class="px-6 py-8">
+        <nav class="md:flex md:justify-between md:items-center">
+            <div>
+                <a href="/">
+                    <img src="./images/logo.svg" alt="Laracast logo" width="165" height="16">
+                </a>
+            </div>
+            <div class="mt-8 lg:mt-0">
+                <a href="/" class="text-xs font-bold uppercase">Home Page</a>
 
+                <a href="#" class="transition-colors duration-300 hover:bg-blue-600 bg-blue-500 ml-3 rounded-full text-xs font-semibold uppercase text-white px-5 py-3">Subscribe for Updates</a>
+            </div>
+        </nav>
+
+        <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6">
+
+            <article class="max-w-4xl mx-auto lg:grid lg:grid-cols-12 gap-x-10 pt-10">
+                <div class="col-span-4 text-center">
+                    <img src="./images/illustration-1.png" class="rounded-xl" alt="Blogpost illustration">
+                    <p class="mt-4 block text-gray-500 text-xs">Published 
+                        <time >1 day ago</time>
+                    </p>
+                    <div class="flex items-center text-sm justify-center mt-4" >
+                        <img src="./images/lary-avatar.svg" alt="Lary avatar">
+                        <div class="ml-3 text-left">
+                            <h5 class="font-bold">Lary Laracore</h5>
+                            Mascat at Laracast
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-8">
+                    <div class="flex justify-between mb-6 -mt-10">
+                        <a href="#" class="transition-colors duration-300 relative inline-flex items-center text-lg hover:text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                            </svg>    
+                            Back to Post
+                        </a>
+                        <div class="space-x-2">
+                            <a href="#" class="px-3 py-1 border border-blue-500 rounded-full text-blue-500 text-2xs uppercase">Techniques</a>
+                            <a href="#" class="px-3 py-1 border border-red-500 rounded-full text-red-500 text-2xs uppercase">Updates</a>
+                        </div>
+
+                    </div>
+                    <h1 class="font-bold text-4xl mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, odit?</h1>
+                    <div class="space-y-4 text-lg">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore rerum ab a! Odio impedit neque nulla architecto nobis atque similique placeat, harum fuga adipisci, esse ipsa ea quas assumenda consequatur nesciunt, consequuntur explicabo? Magnam illum, ipsum delectus provident minus laboriosam, optio eos aperiam, voluptate inventore est! Accusantium, quo amet.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ullam suscipit ipsa dolores illo. Repudiandae culpa perferendis tempore! Tenetur, amet nulla? Unde dolore, minus porro excepturi debitis nesciunt corporis exercitationem!</p>
+                        <h2 class="font-bold text-lg"> Lorem, ipsum dolor.</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ullam suscipit ipsa dolores illo. Repudiandae culpa perferendis tempore! Tenetur, amet nulla? Unde dolore, minus porro excepturi debitis nesciunt corporis exercitationem!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ullam suscipit ipsa dolores illo. Repudiandae culpa perferendis tempore! Tenetur, amet nulla? Unde dolore, minus porro excepturi debitis nesciunt corporis exercitationem!</p>
+                    </div>
+                </div>
+            </article>
+
+
+        </main>
+
+        <footer class="rounded-xl border border-black border-opacity-5 bg-gray-100 text-center py-16 px-10 mt-16">
+            <img src="./images/lary-newsletter-icon.svg" alt="" class="mx-auto">
+            <h5 class="text-3xl">Stay in touch with the latest posts</h5>
+            <p class="text-sm">Promise to keep the inbox clean. No bugs.</p>
+
+            <div class="mt-10">
+                <div class="relative  mx-auto lg:bg-gray-200 rounded-full">
+                    <form method="POST" action="#" class="lg:flex text-sm">
+                        <div class="lg:py-3 lg:px-5 flex items-center">
+                            <label for="email" class="hidden lg:tw-inline">
+                                <img src="./images/mailbox-icon.svg" alt="mailbox letter">
+                            </label>
+                            <input id="email" type="text" placeholder="Your email address" class="lg:bg-transparent pl-4 focus-within\:outline-none">
+                        </div>
+                        <button class="bg-blue-500 lg:ml-3 mt-4 lg:mt-0 rounded-full text-xs font-semibold uppercase text-white px-8 py-3 hover:bg-blue-600">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+    </section>  
 </body>
 </html>
